@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Mess Producer Consumer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hostel Mess Token System</h1>
+    <p>Operating Systems Mini Project</p>
+
+    <h2>Producer: Mess Token Counter</h2>
+    <button onclick="generateToken()">Generate Token</button>
+
+    <h2>Shared Buffer: Waiting Tokens</h2>
+    <p>Tokens waiting: <span id="tokenCount">0 / 5</span></p>
+    <p>Queue: <span id="queue">No tokens waiting</span></p>
+
+    <h2>Consumer: Mess Serving Counter</h2>
+    <button onclick="serveToken()">Serve Next Token</button>
+
+    <h2>System Status</h2>
+    <p>Empty Slots: <span id="emptySlots">5</span></p>
+    <p>Full Slots: <span id="fullSlots">0</span></p>
+    <p>Students Served: <span id="studentsServed">0</span></p>
+
+    <h2>Activity Log</h2>
+    <ul id="activityLog"></ul>
+
+    <button onclick="resetSystem()">Reset System</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
